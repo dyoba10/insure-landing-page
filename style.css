@@ -14,7 +14,7 @@ body {
 .img-header{
     position: relative;
 }
-.img-pattern-left-mobile{
+/* .img-pattern-left-mobile{
     position: absolute;
     top: 500px;
     left:0;
@@ -28,6 +28,42 @@ body {
     position: absolute;
     top: 760px;
     width: 33%;
+} */
+
+.header-img{
+    position: relative;
+}
+.header-img::before{
+   position: absolute;
+   content: url('/images/bg-pattern-intro-left-mobile.svg');
+   top: 450px;
+}
+.header-img::after{
+    position: absolute;
+    content: url('/images/bg-pattern-intro-right-mobile.svg');
+    right: 0;
+    top:700px;
+    z-index: 2;
+}
+.cta-img{
+    position: relative;
+}
+.cta-img::before{
+    content: url('/images/bg-pattern-how-we-work-mobile.svg');
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    
+}
+.footer-img{
+    position: relative;
+}
+.footer-img::before {
+    content: url('/images/bg-pattern-footer-mobile.svg');
+    /* background: url('/images/bg-pattern-footer-desktop.svg') no-repeat; */
+    position: absolute;
+    left:0 ;
+    /* width: 50%; */
 }
 .nav-link{
     padding: 0.3rem 0;
@@ -52,6 +88,11 @@ body {
     color: white;
 }
 
+.header-content{
+    position: relative;
+    z-index: 1;
+}
+
 .heading-font{
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
@@ -61,7 +102,7 @@ body {
 .section-heading{
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .section-item-heading{
@@ -88,22 +129,37 @@ body {
     margin-top: 5rem;
     margin-bottom:5rem;
 }
+.line{
+    border-top: 1px solid #dee2e6;
+    width: 50%;
+    margin: auto;
+}
+.line-footer{
+    border-top:1px solid #dee2e6;
+    width: 85%;
+    margin: auto;
+}
 
 .cta{
     color: white;
     margin: 7rem 0;
     padding: 0 2rem;
 }
-
+.cta-custom {
+    position: relative;
+    z-index: 1;
+}
 .cta-content{
     background-color: hsl(256, 26%, 20%);
-    padding: 0 .8rem;
+    padding: 4rem .8rem;
 }
-.footer::before{
-    background-image: url('/images/bg-pattern-footer-mobile.svg');
+.cta-heading{
+    font-size: 2.5rem;
 }
 .footer-content{
-    padding: 2rem 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
 }
 .footer-menu{
     margin-bottom: 2rem;
