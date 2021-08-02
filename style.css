@@ -202,22 +202,19 @@ body {
     text-decoration: underline;
 }
 @media screen and (max-width:768px) {
-    .light .navbar-nav .nav-link:hover {
-        color: white;
-    }
     .nav-img{
         position: relative;
     }
     .nav-img::before{
         content: url('/images/bg-pattern-mobile-nav.svg');
         position: absolute;
-        top: 360px;
-        left: 0;
+        top: 17px;
+        left: 5px;
     }
     .navbar-collapse{
         background-color: hsl(270, 9%, 17%);
         margin: 1rem -1rem -1rem -1rem;
-        height: 100vh;
+        height: 50vh;
     }
 }
 @media screen and (min-width:992px) {
