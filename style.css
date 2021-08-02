@@ -208,8 +208,8 @@ body {
     .nav-img::before{
         content: url('/images/bg-pattern-mobile-nav.svg');
         position: absolute;
-        top: 17px;
-        left: 5px;
+        top: 0px;
+        left: 0px;
     }
     .navbar-collapse{
         background-color: hsl(270, 9%, 17%);
